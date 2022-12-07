@@ -1,18 +1,36 @@
 body{
-  background-color: blue;
   display: flex;
   justify-content: space-between;
+  flex-basis: max-content;
+  
+  background-image: url('jerry-zhang.jpg'); 
+  /* Background image from jerry zhang on upsplash.com */
+  background-size: cover;
+  
+  padding: 30px;
+
+  font-family: 'Roboto', sans-serif;;
 }
 
 #weather-card {
   display: flex;
   flex-direction: column;
-  width: 500px;
 
   border-radius: 10px;
   background-color: white;
-  margin: 20px;
+
   padding: 20px;
+}
+
+#weather-location {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#current-conditions{
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 #weather {
@@ -23,7 +41,38 @@ body{
   border-right: 2px solid black;
 }
 
+#temp {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#feels-like,
+#hi-lo,
+#wind,
+#humidity {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 #current-temp,
 #weather-stats {
   padding: 20px;
+}
+
+#hi-lo,
+#wind,
+#humidity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.hi-lo-arrow {
+  height: 20px;
+  padding: 5px;
+}
+
+#low-temp {
+  transform: rotate(180deg);
 }

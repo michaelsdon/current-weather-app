@@ -5,34 +5,44 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+  </style> 
   <title>Weather</title>
 </head>
 <body>
   <div id="weather-card">
     <div id="weather-location">
-      <h4>Boulder, Colorado</h4>
+      Boulder, Colorado
     </div>
     <div id="current-conditions">
-      <h5>Partly Cloudy</h5>
+      Partly Cloudy
     </div>
     <div id="weather">
       <div id="current-temp">
         <div id="temp">
-          <h1>45 F</h1>
+          45&deg;F
         </div>
         <div id="feels-like">
-          <h6>Feels like: 40F</h6>
+          Feels like: 40&deg;F
         </div>
       </div>
       <div id="weather-stats">
         <div id="hi-lo">
-          <h5>^ 61 F v 39 F</h5>
+          <img class="hi-lo-arrow" id="high-temp"src="arrow.svg" alt="">
+          61&deg;F
+          <img class="hi-lo-arrow" id="low-temp" src="arrow.svg" alt="">
+          39&deg;F
         </div>
         <div id="wind">
-          <h5>Wind: 2 MPH -></h5>
+          Wind: 2 MPH 
+          <img class="hi-lo-arrow" id="wind-direction" src="arrow.svg" alt="">
         </div>
         <div id="humidity">
-          <h5>Humidity: 29%</h5>
+          Humidity: 29%
         </div>
       </div>
     </div>
