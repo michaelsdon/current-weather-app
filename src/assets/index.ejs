@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+  </style>
+  <script src="./index.js"></script> 
+  <title>Weather</title>
+</head>
+<body>
+  <div id="weather-card">
+    <div id="weather-location">
+      Boulder, Colorado
+    </div>
+    <div id="current-conditions">
+      Partly Cloudy
+    </div>
+    <div id="weather">
+      <div id="current-temp">
+        <div id="temp">
+          45&deg;F
+        </div>
+        <div id="feels-like">
+          Feels like: 40&deg;F
+        </div>
+      </div>
+      <div id="weather-stats">
+        <div id="hi-lo">
+          <img class="hi-lo-arrow" id="high-temp" alt="">
+          <div id="high-temp-deg">
+            61&deg;F
+          </div>
+          <img class="hi-lo-arrow" id="low-temp" alt="">
+          <div id="low-temp-deg">
+            39&deg;F
+          </div>
+        </div>
+        <div id="wind">
+          <div id="wind-speed"></div>
+          Wind: 2 MPH 
+          <img class="hi-lo-arrow" id="wind-direction" src="./arrow.svg" alt="">
+        </div>
+        <div id="humidity">
+          Humidity: 29%
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="city-search">
+    <input type="text">
+    <button>&deg;F | &deg;C</button>
+  </div>
+</body>
+</html>
