@@ -43,9 +43,10 @@
           </div>
         </div>
         <div id="wind">
-          <div id="wind-speed"></div>
-          Wind: 2 MPH 
-          <img class="hi-lo-arrow" id="wind-direction" src="./arrow.svg" alt="">
+          <div id="wind-speed">
+            Wind: 2 MPH 
+          </div>
+          <img class="hi-lo-arrow" id="wind-direction" src="" alt="">
         </div>
         <div id="humidity">
           Humidity: 29%
@@ -53,9 +54,11 @@
       </div>
     </div>
   </div>
-  <div id="city-search">
-    <input type="text">
-    <button>&deg;F | &deg;C</button>
+  <div id="right-side">
+    <form action="#">
+      <input id="city-search" type="text">
+    </form>
+    <button id="unit-toggle">&deg;F | &deg;C</button>
   </div>
 </body>
 </html>
